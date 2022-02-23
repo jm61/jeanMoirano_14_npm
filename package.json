@@ -2,20 +2,21 @@
   "name": "jm61-p14-modal",
   "description": "modal react component for project 14 OC",
   "author": "jm61",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "keywords": ["react", "components", "modal"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jm61/jeanMoirano_14_npm"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.3",
-    "@testing-library/user-event": "^13.5.0"
+    "@babel/polyfill": "^7.12.1"
   },
   "scripts": {
     "start": "react-scripts start",
