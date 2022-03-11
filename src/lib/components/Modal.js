@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -39,9 +39,24 @@ const Button = styled.button`
     padding: 0 1rem;
 `
 const Modal = props => {
-    if(!props.show) {
+        
+useEffect(() => {
+    document.body.addEventListener('keydown', closeOnEsc)
+    return function cleanup() {
+        document.body.removeEventListener('keydown', closeOnEsc)
+    }
+})
+
+const closeOnEsc = e => {
+    if((e.charCode || e.keyCode) === 27) {
+        props.onClose()
+    }
+}
+
+if(!props.show) {
         return null
     }
+
     return (
         <Container onClick={props.onClose}>
             <Content onClick={e => e.stopPropagation()}>
