@@ -2,7 +2,7 @@
   "name": "jm61-p14-modal",
   "description": "modal react component for project 14 OC",
   "author": "jm61",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
